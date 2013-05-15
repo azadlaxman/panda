@@ -11,6 +11,7 @@ D:\Projects\panda\PANDA\PANDA\bin\EntityFramework.dll
 D:\Projects\panda\PANDA\PANDA\bin\Microsoft.Web.Infrastructure.dll
 D:\Projects\panda\PANDA\PANDA\bin\Microsoft.Web.WebPages.OAuth.dll
 D:\Projects\panda\PANDA\PANDA\bin\Newtonsoft.Json.dll
+D:\Projects\panda\PANDA\PANDA\bin\Panda.Ninject.IoC.dll
 D:\Projects\panda\PANDA\PANDA\bin\System.Net.Http.dll
 D:\Projects\panda\PANDA\PANDA\bin\System.Net.Http.Formatting.dll
 D:\Projects\panda\PANDA\PANDA\bin\System.Net.Http.WebRequest.dll
@@ -26,6 +27,7 @@ D:\Projects\panda\PANDA\PANDA\bin\System.Web.WebPages.Razor.dll
 D:\Projects\panda\PANDA\PANDA\bin\WebGrease.dll
 D:\Projects\panda\PANDA\PANDA\bin\WebMatrix.Data.dll
 D:\Projects\panda\PANDA\PANDA\bin\WebMatrix.WebData.dll
+D:\Projects\panda\PANDA\PANDA\bin\Ninject.dll
 D:\Projects\panda\PANDA\PANDA\bin\EntityFramework.xml
 D:\Projects\panda\PANDA\PANDA\bin\Newtonsoft.Json.xml
 D:\Projects\panda\PANDA\PANDA\bin\System.Net.Http.xml
@@ -48,6 +50,9 @@ D:\Projects\panda\PANDA\PANDA\bin\DotNetOpenAuth.OAuth.Consumer.xml
 D:\Projects\panda\PANDA\PANDA\bin\DotNetOpenAuth.OAuth.xml
 D:\Projects\panda\PANDA\PANDA\bin\DotNetOpenAuth.OpenId.xml
 D:\Projects\panda\PANDA\PANDA\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\Projects\panda\PANDA\PANDA\bin\Ninject.pdb
+D:\Projects\panda\PANDA\PANDA\bin\Ninject.xml
 D:\Projects\panda\PANDA\PANDA\obj\Debug\PANDA.csprojResolveAssemblyReference.cache
 D:\Projects\panda\PANDA\PANDA\obj\Debug\PANDA.dll
 D:\Projects\panda\PANDA\PANDA\obj\Debug\PANDA.pdb
+D:\Projects\panda\PANDA\PANDA\bin\Panda.WebLib.dll
