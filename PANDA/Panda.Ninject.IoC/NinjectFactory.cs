@@ -1,4 +1,12 @@
-﻿using System;
+﻿// ***************************************************************************
+//  Author              :   Azad Laxman.
+//  Created Date        :   May 22 2013.
+//  Last Modified By    :   Azad Laxman.
+//  Last Modified Date  :   May 22 2013.
+//  Description         :   Ninject DI framework wrapper (Factory).
+// ***************************************************************************
+
+using System;
 using System.Collections.Concurrent;
 using System.Xml.Linq;
 using Ninject;
@@ -7,13 +15,9 @@ namespace Panda.Ninject.IoC
 {
     //  Summary:
     //      Factory Wrapper implementation for managing (Ninject)Dependency Injections
-    public class NinjectFactory : INinjectFactory
+    public static class NinjectFactory
     {
         #region MEMBER_VARIABLES
-        //  Summary:
-        //      Single instance of Ninject Factory
-        private static volatile NinjectFactory _instance = new NinjectFactory();
-
         //  Summary:
         //      Ninject Standard kernel instance
         private static volatile IKernel _kernel = new StandardKernel();
@@ -21,14 +25,10 @@ namespace Panda.Ninject.IoC
         //  Summary
         //      Locker for singleton      
         private static object _syncRoot = new object();
-        #endregion
 
-        #region CONSTRUCTOR
-        ///<summary>
-        /// Private Constructor for Singleton NinjectFactory
-        /// </summary>
-        private NinjectFactory()
-        {
+        public static IKernel NinjectKernel {
+            get { return NinjectFactory._kernel; }
+            private set { _kernel = value; }
         }
         #endregion
 
@@ -37,16 +37,25 @@ namespace Panda.Ninject.IoC
         /// To get instance of (Singleton)NinjectFactory
         ///</summary>
         /// <returns>Singleton Instance of Ninject Factory.</returns>
-        public static NinjectFactory GetInstance()
+        public static T GetInstance<T>()
         {
-            return _instance;
+            return _kernel.TryGet<T>();;
+        }
+
+        ///<summary>
+        /// To get IoC concrete component. 
+        ///</summary>
+        /// <returns>Concrete Implementation.</returns>
+        public static object GetInstance(Type componentType)
+        {
+            return _kernel.TryGet(componentType);
         }
 
         ///<summary>
         /// Maps DI Contracts to its bindings.
         /// </summary>
         ///<param name="bindings">Dictionary containing mapppings for Key:Interface Value:Implementation.</param>
-        public void AddBindings(ConcurrentDictionary<Type, Type> bindings)
+        public static void AddBindings(ConcurrentDictionary<Type, Type> bindings)
         {
             lock (_syncRoot)
             {
@@ -63,7 +72,7 @@ namespace Panda.Ninject.IoC
         /// Adds Bindings of interfaces based on input xml files path.
         /// </summary>
         /// <param name="xmlFilePath">components config Xml file path containing component mappings.</param>
-        public void AddBindings(string xmlFilePath)
+        public static void AddBindings(string xmlFilePath)
         {
             throw new NotImplementedException();
 
@@ -81,7 +90,7 @@ namespace Panda.Ninject.IoC
         /// Adds Bindings of interfaces based on input xml Document.
         /// </summary>
         /// <param name="xmlFile">XmlDoc components config containing, Component mappings.</param>
-        public void AddBindings(XDocument xmlFile)
+        public static void AddBindings(XDocument xmlFile)
         {
             try
             {
@@ -98,9 +107,9 @@ namespace Panda.Ninject.IoC
         /// </summary>
         /// <typeparam name="componentType">Requested Implementation type.</typeparam>
         /// <returns>Instance of Implementation type.</returns>
-        public object Resolve(Type componentType)
+        public static object Resolve(Type componentType)
         {
-            return _kernel.TryGet(componentType);
+            return _kernel.Get(componentType);
         }
 
         /// <summary>
@@ -108,7 +117,7 @@ namespace Panda.Ninject.IoC
         /// </summary>
         /// <typeparam name="T">Requested Implementation type.</typeparam>
         /// <returns>Instance of Implementation type.</returns>
-        public T Resolve<T>()
+        public static T Resolve<T>()
         {
             return _kernel.TryGet<T>();
         }
@@ -118,7 +127,7 @@ namespace Panda.Ninject.IoC
         /// </summary>
         /// <param name="name">name of the module.</param>
         /// <returns>True if the specified module has been loaded; otherwise, false.</returns>
-        public bool HasModule(string name)
+        public static bool HasModule(string name)
         {
             return _kernel.HasModule(name);
         }
@@ -128,7 +137,7 @@ namespace Panda.Ninject.IoC
         /// </summary>
         /// <param name="componentType">Inteface Type of component to fetch service.</param>
         /// <returns>True if the specified module has been loaded; otherwise, false.</returns>
-        public bool HasModule(Type componentType)
+        public static bool HasModule(Type componentType)
         {
             return ((null == _kernel.GetBindings(componentType))?false:true);
         }
@@ -137,7 +146,7 @@ namespace Panda.Ninject.IoC
         /// Resolves property injection dependencies in already instantiated Implementation types.
         /// </summary>
         /// <param name="obj">Specified instance of implementation type.</param>
-        public void Inject(object obj)
+        public static void Inject(object obj)
         {
             _kernel.Inject(obj);
         }

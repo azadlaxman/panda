@@ -38,6 +38,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Panda.Config">
+      <HintPath>..\RefAssemblies\Panda.Config.dll</HintPath>
+    </Reference>
     <Reference Include="Panda.Ninject.IoC">
       <HintPath>..\RefAssemblies\Panda.Ninject.IoC.dll</HintPath>
     </Reference>
@@ -339,6 +342,9 @@
     </VisualStudio>
   </ProjectExtensions>
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy /Y "$(TargetDir)$(ProjectName).dll" $(SolutionDir)\RefAssemblies</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

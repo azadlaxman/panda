@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PANDA", "PANDA\PANDA.csproj", "{A5E5443C-9FD7-4FF9-ADAE-7A38AD5C3867}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PandaServices", "PANDAservices\PandaServices.csproj", "{16A89E3C-FC7A-4AE2-96B3-FCA419CE581F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panda.Services", "PANDAservices\Panda.Services.csproj", "{16A89E3C-FC7A-4AE2-96B3-FCA419CE581F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PandaCorLib", "PANDACorLib\PandaCorLib.csproj", "{C2C19FB5-64C5-4FE5-9BDD-3F1FA6F72150}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panda.CorLib", "PANDACorLib\Panda.CorLib.csproj", "{C2C19FB5-64C5-4FE5-9BDD-3F1FA6F72150}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PandaDal", "PandaDal\PandaDal.csproj", "{CA4AECDE-3143-412F-B1CF-0BA99CCF35B6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panda.Dal", "PandaDal\Panda.Dal.csproj", "{CA4AECDE-3143-412F-B1CF-0BA99CCF35B6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{07F2B0AC-CC65-4EAD-95C6-8739B166A5E1}"
 	ProjectSection(SolutionItems) = preProject
@@ -24,6 +24,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{0C2387
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panda.Ninject.IoC", "Panda.Ninject.IoC\Panda.Ninject.IoC.csproj", "{4B8E1440-708B-4BD0-8116-63E740CEB6D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panda.Config", "Panda.Config\Panda.Config.csproj", "{E4689EC5-DF85-4A70-9882-F741AF63791D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +57,10 @@ Global
 		{4B8E1440-708B-4BD0-8116-63E740CEB6D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B8E1440-708B-4BD0-8116-63E740CEB6D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B8E1440-708B-4BD0-8116-63E740CEB6D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4689EC5-DF85-4A70-9882-F741AF63791D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4689EC5-DF85-4A70-9882-F741AF63791D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4689EC5-DF85-4A70-9882-F741AF63791D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4689EC5-DF85-4A70-9882-F741AF63791D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

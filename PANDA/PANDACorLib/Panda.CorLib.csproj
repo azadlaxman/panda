@@ -8,8 +8,8 @@
     <ProjectGuid>{C2C19FB5-64C5-4FE5-9BDD-3F1FA6F72150}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PANDACorLib</RootNamespace>
-    <AssemblyName>PANDACorLib</AssemblyName>
+    <RootNamespace>Panda.CorLib</RootNamespace>
+    <AssemblyName>Panda.CorLib</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
