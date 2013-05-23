@@ -57,3 +57,4 @@ D:\Projects\panda\PANDA\PANDA\bin\Ninject.xml
 D:\Projects\panda\PANDA\PANDA\obj\Debug\PANDA.csprojResolveAssemblyReference.cache
 D:\Projects\panda\PANDA\PANDA\obj\Debug\PANDA.dll
 D:\Projects\panda\PANDA\PANDA\obj\Debug\PANDA.pdb
+D:\Projects\panda\PANDA\PANDA\bin\Panda.Services.dll

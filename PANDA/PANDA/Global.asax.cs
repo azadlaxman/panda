@@ -14,6 +14,7 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using Panda.Config;
 using Panda.WebLib;
+using Panda.Services.ObjectMapper;
 
 namespace PANDA
 {
@@ -37,6 +38,7 @@ namespace PANDA
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterAuth();
             //Register all the Ninject Bindings(including controllers) for DI
+            //TODO: Not needed it gets initialized through static constructor.
             NinjectBindings.RegisterBindingDetails();
         }
     }

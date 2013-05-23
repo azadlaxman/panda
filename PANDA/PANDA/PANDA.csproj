@@ -44,6 +44,9 @@
     <Reference Include="Panda.Ninject.IoC">
       <HintPath>..\RefAssemblies\Panda.Ninject.IoC.dll</HintPath>
     </Reference>
+    <Reference Include="Panda.Services">
+      <HintPath>..\RefAssemblies\Panda.Services.dll</HintPath>
+    </Reference>
     <Reference Include="Panda.WebLib">
       <HintPath>..\RefAssemblies\Panda.WebLib.dll</HintPath>
     </Reference>
