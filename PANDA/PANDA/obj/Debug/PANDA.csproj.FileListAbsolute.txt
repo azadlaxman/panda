@@ -13,6 +13,7 @@ D:\Projects\panda\PANDA\PANDA\bin\Microsoft.Web.WebPages.OAuth.dll
 D:\Projects\panda\PANDA\PANDA\bin\Newtonsoft.Json.dll
 D:\Projects\panda\PANDA\PANDA\bin\Panda.Config.dll
 D:\Projects\panda\PANDA\PANDA\bin\Panda.Ninject.IoC.dll
+D:\Projects\panda\PANDA\PANDA\bin\Panda.Services.dll
 D:\Projects\panda\PANDA\PANDA\bin\Panda.WebLib.dll
 D:\Projects\panda\PANDA\PANDA\bin\System.Net.Http.dll
 D:\Projects\panda\PANDA\PANDA\bin\System.Net.Http.Formatting.dll
@@ -57,4 +58,3 @@ D:\Projects\panda\PANDA\PANDA\bin\Ninject.xml
 D:\Projects\panda\PANDA\PANDA\obj\Debug\PANDA.csprojResolveAssemblyReference.cache
 D:\Projects\panda\PANDA\PANDA\obj\Debug\PANDA.dll
 D:\Projects\panda\PANDA\PANDA\obj\Debug\PANDA.pdb
-D:\Projects\panda\PANDA\PANDA\bin\Panda.Services.dll
