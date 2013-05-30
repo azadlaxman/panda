@@ -3,18 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PANDA", "PANDA\PANDA.csproj", "{A5E5443C-9FD7-4FF9-ADAE-7A38AD5C3867}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panda.Services", "PANDAservices\Panda.Services.csproj", "{16A89E3C-FC7A-4AE2-96B3-FCA419CE581F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panda.Services", "Panda.Services\Panda.Services.csproj", "{16A89E3C-FC7A-4AE2-96B3-FCA419CE581F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panda.CorLib", "PANDACorLib\Panda.CorLib.csproj", "{C2C19FB5-64C5-4FE5-9BDD-3F1FA6F72150}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panda.CorLib", "Panda.CorLib\Panda.CorLib.csproj", "{C2C19FB5-64C5-4FE5-9BDD-3F1FA6F72150}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panda.Dal", "PandaDal\Panda.Dal.csproj", "{CA4AECDE-3143-412F-B1CF-0BA99CCF35B6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panda.Dal", "Panda.Dal\Panda.Dal.csproj", "{CA4AECDE-3143-412F-B1CF-0BA99CCF35B6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{07F2B0AC-CC65-4EAD-95C6-8739B166A5E1}"
 	ProjectSection(SolutionItems) = preProject
 		Solution Items\SharedAssemblyInfo.cs = Solution Items\SharedAssemblyInfo.cs
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panda.WebLib", "PandaWebLib\Panda.WebLib.csproj", "{C6B065C3-CBAE-4FEF-8A99-45592F378ADA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panda.WebLib", "Panda.WebLib\Panda.WebLib.csproj", "{C6B065C3-CBAE-4FEF-8A99-45592F378ADA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{0C238752-AB4B-4FA2-9ABC-E84971381153}"
 	ProjectSection(SolutionItems) = preProject
